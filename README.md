@@ -1,10 +1,15 @@
-# 邪恶小猫 AI 对话应用 😼
+# EvilKitten
+Kind&amp;Evil Kitten Chat
+学习了：
+axios二次封装
+虚拟列表渲染
+  解决了：
+  思考过程和回答过程分开
+  文字重叠的问题：paddingtop和paddingbottom自然撑开，根据startIndex和clientHeight和scrollTop计算
+LLM调用 / SSE
 
 一个具有双主题模式的 AI 对话网页应用，专为移动端设计，适合前端学习。
 
-## 🎓 学习价值
-
-这个项目非常适合前端学习，涵盖了现代 Web 开发的核心技术：
 
 ### 核心技术栈
 - **Vue 3** - 最新的 Composition API 和 `<script setup>` 语法
@@ -254,23 +259,4 @@ location.reload()
 - [ ] 图片上传支持
 - [ ] 多语言支持
 
-## 📄 许可证
 
-MIT
-
-## 👨‍💻 适合人群
-
-- 前端初学者（有 HTML/CSS/JavaScript 基础）
-- 想学习 Vue 3 的开发者
-- 想了解 AI 应用开发的学生
-- 想学习现代前端工程化的开发者
-
-## 🎉 开始学习
-
-1. Fork 这个项目
-2. 按照快速开始指南配置环境
-3. 阅读代码注释理解实现
-4. 尝试修改和添加新功能
-5. 遇到问题查看文档或提 Issue
-
-祝你学习愉快！🚀
