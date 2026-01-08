@@ -1,0 +1,62 @@
+// 邪恶小猫模式 Element Plus 主题变量
+
+// 主色调 - 神秘的粉紫色
+$--el-color-primary: #E91E63;
+$--el-color-primary-light-3: #F06292;
+$--el-color-primary-light-5: #F48FB1;
+$--el-color-primary-light-7: #F8BBD0;
+$--el-color-primary-light-8: #FCE4EC;
+$--el-color-primary-light-9: #FFF0F5;
+$--el-color-primary-dark-2: #C2185B;
+
+// 背景色 - 深色神秘
+$--el-bg-color: #1a1a2e;
+$--el-bg-color-page: #1a1a2e;
+$--el-bg-color-overlay: #16213e;
+
+// 文字颜色 - 浅色
+$--el-text-color-primary: #ffffff;
+$--el-text-color-regular: #E0E0E0;
+$--el-text-color-secondary: #a0a0a0;
+$--el-text-color-placeholder: #666666;
+
+// 边框颜色
+$--el-border-color: #2d3561;
+$--el-border-color-light: #252b4a;
+$--el-border-color-lighter: #1f2540;
+$--el-border-color-extra-light: #1a1f35;
+
+// 填充颜色
+$--el-fill-color: #16213e;
+$--el-fill-color-light: #1a2544;
+$--el-fill-color-lighter: #1e2949;
+$--el-fill-color-extra-light: #222d4e;
+$--el-fill-color-dark: #12192e;
+$--el-fill-color-darker: #0e1524;
+$--el-fill-color-blank: transparent;
+
+// 圆角
+$--el-border-radius-base: 12px;
+$--el-border-radius-small: 8px;
+$--el-border-radius-round: 20px;
+$--el-border-radius-circle: 100%;
+
+// 字体大小
+$--el-font-size-base: 16px;
+$--el-font-size-small: 14px;
+$--el-font-size-large: 18px;
+$--el-font-size-extra-large: 20px;
+
+// 阴影
+$--el-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.3);
+$--el-box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.25);
+$--el-box-shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+// 过渡时间
+$--el-transition-duration: 0.3s;
+$--el-transition-duration-fast: 0.2s;
+
+// 遮罩层
+$--el-overlay-color: rgba(0, 0, 0, 0.7);
+$--el-overlay-color-light: rgba(0, 0, 0, 0.5);
+$--el-overlay-color-lighter: rgba(0, 0, 0, 0.3);

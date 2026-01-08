@@ -1,0 +1,26 @@
+# 忽略依赖
+node_modules
+
+# 忽略构建产物
+dist
+dist-ssr
+*.local
+
+# 忽略编辑器配置
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 忽略自动生成的类型文件
+src/types/auto-imports.d.ts
+src/types/components.d.ts
+
+# Environment variables
+.env.local
+.env.*.local

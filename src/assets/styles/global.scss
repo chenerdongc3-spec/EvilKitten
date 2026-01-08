@@ -1,0 +1,242 @@
+// 全局样式
+@use './variables.scss' as *;
+
+// Element Plus 样式重置和定制
+:root {
+  // Element Plus CSS 变量 - 温柔模式
+  --el-color-primary: #FF9800;
+  --el-color-primary-light-3: #FFB74D;
+  --el-color-primary-light-5: #FFCC80;
+  --el-color-primary-light-7: #FFE0B2;
+  --el-color-primary-light-8: #FFF3E0;
+  --el-color-primary-light-9: #FFF8E1;
+  --el-color-primary-dark-2: #F57C00;
+  
+  --el-bg-color: #fef6e4;
+  --el-bg-color-page: #fef6e4;
+  --el-bg-color-overlay: #ffffff;
+  
+  --el-text-color-primary: #333333;
+  --el-text-color-regular: #666666;
+  --el-text-color-secondary: #999999;
+  --el-text-color-placeholder: #CCCCCC;
+  
+  --el-border-color: #e0e0e0;
+  --el-border-color-light: #f0f0f0;
+  --el-border-color-lighter: #f5f5f5;
+  
+  --el-border-radius-base: 12px;
+  --el-border-radius-small: 8px;
+  --el-border-radius-round: 20px;
+  
+  --el-font-size-base: 16px;
+  --el-font-size-small: 14px;
+  --el-font-size-large: 18px;
+  
+  --el-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --el-box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.08);
+  
+  --el-transition-duration: 0.3s;
+  --el-transition-duration-fast: 0.2s;
+}
+
+// 邪恶小猫模式 Element Plus 变量
+[data-theme="evil"] {
+  --el-color-primary: #E91E63;
+  --el-color-primary-light-3: #F06292;
+  --el-color-primary-light-5: #F48FB1;
+  --el-color-primary-light-7: #F8BBD0;
+  --el-color-primary-light-8: #FCE4EC;
+  --el-color-primary-light-9: #FFF0F5;
+  --el-color-primary-dark-2: #C2185B;
+  
+  --el-bg-color: #1a1a2e;
+  --el-bg-color-page: #1a1a2e;
+  --el-bg-color-overlay: #16213e;
+  
+  --el-text-color-primary: #ffffff;
+  --el-text-color-regular: #E0E0E0;
+  --el-text-color-secondary: #a0a0a0;
+  --el-text-color-placeholder: #666666;
+  
+  --el-border-color: #2d3561;
+  --el-border-color-light: #252b4a;
+  --el-border-color-lighter: #1f2540;
+  
+  --el-fill-color: #16213e;
+  --el-fill-color-light: #1a2544;
+  --el-fill-color-lighter: #1e2949;
+  --el-fill-color-extra-light: #222d4e;
+  --el-fill-color-dark: #12192e;
+  --el-fill-color-darker: #0e1524;
+  --el-fill-color-blank: transparent;
+  
+  --el-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --el-box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.25);
+  
+  --el-overlay-color: rgba(0, 0, 0, 0.7);
+  --el-overlay-color-light: rgba(0, 0, 0, 0.5);
+  --el-overlay-color-lighter: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: var(--font-md);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  
+  &:hover {
+    background: var(--color-textSecondary);
+  }
+}
+
+// 按钮重置
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+  
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+// 输入框重置
+input,
+textarea {
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+  
+  &::placeholder {
+    color: var(--color-textSecondary);
+  }
+}
+
+// 链接重置
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// 列表重置
+ul,
+ol {
+  list-style: none;
+}
+
+// 工具类
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
+
+.gap-lg {
+  gap: var(--spacing-lg);
+}
+
+// 动画
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-normal);
+}
+
+.slide-up {
+  animation: slideUp var(--transition-normal);
+}
